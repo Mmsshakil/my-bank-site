@@ -18,11 +18,13 @@ document.getElementById('button-submit').addEventListener('click', function () {
     // we will not check mail and pass this type in future
 
     if (mails === 'shakil@govt.com' && passes === 'shakil') {
-        console.log('valid');
+
+        // if the mail and pass is true then go to the bank page
+        window.location.href = 'bank.html';
 
     }
     else {
-        console.log('invalid');
+        alert('Please enter correct mail and pass');
     }
 
 })
