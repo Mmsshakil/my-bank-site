@@ -15,24 +15,57 @@
     </header>
 
     <main>
-        <div class="grid grid-cols-3 gap-4 w-9/12 text-white mx-auto mt-10">
-            <div class="bg-lime-400 rounded-lg p-5">
-                <h3 class="text-3xl">Deposite</h3>
-                <h4 class="text-5xl">$00</h4>
-            </div>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-9/12 text-white mx-auto mt-10">
+                <div class="bg-lime-400 rounded-lg p-5">
+                    <h3 class="text-3xl">Deposite</h3>
+                    <h4 class="text-5xl">$<span id="defaultDeposit">00</span></h4>
+                </div>
 
-            <div class="bg-amber-400 rounded-lg p-5">
-                <h3 class="text-3xl">Withdraw</h3>
-                <h4 class="text-5xl">$00</h4>
-            </div>
+                <div class="bg-amber-400 rounded-lg p-5">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-5xl">$00</h4>
+                </div>
 
-            <div class="bg-sky-400 rounded-lg p-5">
-                <h3 class="text-3xl">Balance</h3>
-                <h4 class="text-5xl">$1240</h4>
-            </div>
+                <div class="bg-sky-400 rounded-lg p-5">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h4 class="text-5xl">$1240</h4>
+                </div>
 
-        </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10">
+                <div class="bg-teal-400 rounded-lg p-5 ">
+
+                    <h3 class="text-4xl mb-3">Please Deposite</h3>
+                    <input class="block w-9/12 pl-2 mb-4 rounded-md py-4" type="text" name="" id="depositeInput"
+                        placeholder="$ Amount you want to Deposite">
+                    <button class="bg-slate-500 text-white py-3 px-6 rounded-md text-xl font-bold hover:bg-slate-700"
+                        id="button-deposite">Deposite</button>
+
+                </div>
+
+                <div class="bg-violet-400 rounded-lg p-5">
+
+                    <h3 class="text-4xl mb-3">Please Withdraw</h3>
+                    <input class="block w-9/12 pl-2 mb-4 rounded-md py-4" type="text" name="" id="inputMail"
+                        placeholder="$ Amount you want to Withdraw">
+                    <button class="bg-slate-500 text-white py-3 px-6 rounded-md text-xl font-bold hover:bg-slate-700"
+                        id="button-submit">Withdraw</button>
+
+                </div>
+
+
+            </div>
+        </section>
+
     </main>
+
+
+    <script src="./js/deposite.js"></script>
+
 </body>
 
 </html>
