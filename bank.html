@@ -24,7 +24,7 @@
 
                 <div class="bg-amber-400 rounded-lg p-5">
                     <h3 class="text-3xl">Withdraw</h3>
-                    <h4 class="text-5xl">$00</h4>
+                    <h4 class="text-5xl">$<span id="defaultDepositWithdraw">00</span></h4>
                 </div>
 
                 <div class="bg-sky-400 rounded-lg p-5">
@@ -37,6 +37,8 @@
 
         <section>
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10">
+
+                <!-- deposite part -->
                 <div class="bg-teal-400 rounded-lg p-5 ">
 
                     <h3 class="text-4xl mb-3">Please Deposite</h3>
@@ -46,14 +48,14 @@
                         id="button-deposite">Deposite</button>
 
                 </div>
-
+                <!-- withdraw part -->
                 <div class="bg-violet-400 rounded-lg p-5">
 
                     <h3 class="text-4xl mb-3">Please Withdraw</h3>
-                    <input class="block w-9/12 pl-2 mb-4 rounded-md py-4" type="text" name="" id="inputMail"
+                    <input class="block w-9/12 pl-2 mb-4 rounded-md py-4" type="text" name="" id="withdrawInput"
                         placeholder="$ Amount you want to Withdraw">
                     <button class="bg-slate-500 text-white py-3 px-6 rounded-md text-xl font-bold hover:bg-slate-700"
-                        id="button-submit">Withdraw</button>
+                        id="button-withdraw">Withdraw</button>
 
                 </div>
 
@@ -65,6 +67,7 @@
 
 
     <script src="./js/deposite.js"></script>
+    <script src="./js/withdraw.js"></script>
 
 </body>
 
