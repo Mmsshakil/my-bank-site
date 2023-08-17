@@ -5,7 +5,11 @@ document.getElementById('button-deposite').addEventListener('click', function ()
     // now take the value from deposite input 
     const depositeInput = document.getElementById('depositeInput');
     const newDepositeValue = depositeInput.value;
-    // console.log(depositeValue);
+
+    if (isNaN(parseFloat(newDepositeValue))) {
+        alert("Please Enter Number");
+        return;
+    }
 
     // now take the value of total deposite by using inner text
     const defaultDeposit = document.getElementById('defaultDeposit');
